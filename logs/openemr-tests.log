@@ -1,0 +1,487 @@
+2026-01-05 11:42:25.069 [main] INFO  utils.ConfigReader - Loading configuration from: src/test/resources/config.properties
+2026-01-05 11:42:25.070 [main] INFO  utils.ConfigReader - Configuration loaded successfully
+2026-01-05 11:42:26.289 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 11:42:46.407 [main] ERROR pages.LoginPage - Failed to verify login page: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'OpenEMR')]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'OpenEMR')]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229) ~[selenium-support-4.15.0.jar:?]
+	at pages.LoginPage.isLoginPageDisplayed(LoginPage.java:115) ~[classes/:?]
+	at tests.LoginPageTest.testLoginPageDisplay(LoginPageTest.java:28) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308) [surefire-testng-3.2.2.jar:3.2.2]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71) [surefire-testng-3.2.2.jar:3.2.2]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113) [surefire-testng-3.2.2.jar:3.2.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.2.jar:3.2.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.2.jar:3.2.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.2.jar:3.2.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.2.jar:3.2.2]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'OpenEMR')]"}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b86e4f9bad109cdf47b55ea11ad3a63, findElement {using=xpath, value=//p[contains(text(),'OpenEMR')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\BASHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:3227}, goog:processID: 6796, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:3227/devtool..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b86e4f9bad109cdf47b55ea11ad3a63
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.15.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204) ~[selenium-support-4.15.0.jar:?]
+	... 32 more
+2026-01-05 11:42:48.927 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 11:42:48.930 [main] INFO  pages.LoginPage - Performing login with username: Basharmal123
+2026-01-05 11:42:49.222 [main] INFO  pages.LoginPage - Entered username: Basharmal123
+2026-01-05 11:42:49.437 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 11:42:56.697 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 11:42:56.697 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 11:43:03.715 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 11:43:03.720 [main] INFO  pages.LoginPage - Performing login with username: invalidUser
+2026-01-05 11:43:04.003 [main] INFO  pages.LoginPage - Entered username: invalidUser
+2026-01-05 11:43:04.184 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 11:43:04.346 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 11:43:04.346 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 11:43:09.496 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 11:43:10.053 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 11:43:14.367 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 11:43:14.380 [main] INFO  pages.LoginPage - Page title: OpenEMR Login
+2026-01-05 12:19:30.027 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:19:30.034 [main] INFO  listeners.TestListener - Test Suite Started: OpenEMR Test Suite
+2026-01-05 12:19:30.034 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:19:35.277 [main] INFO  utils.ConfigReader - Loading configuration from: src/test/resources/config.properties
+2026-01-05 12:19:35.279 [main] INFO  utils.ConfigReader - Configuration loaded successfully
+2026-01-05 12:19:36.690 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:19:36.744 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:19:36.744 [main] INFO  listeners.TestListener - Test Started: testLoginPageDisplay
+2026-01-05 12:19:36.745 [main] INFO  listeners.TestListener - Test Description: Verify login page is displayed
+2026-01-05 12:19:36.745 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:19:56.881 [main] ERROR pages.LoginPage - Failed to verify login page: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'OpenEMR')]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'OpenEMR')]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229) ~[selenium-support-4.15.0.jar:?]
+	at pages.LoginPage.isLoginPageDisplayed(LoginPage.java:115) ~[classes/:?]
+	at tests.LoginPageTest.testLoginPageDisplay(LoginPageTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'OpenEMR')]"}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b003b01a763aacda011e1ee7c6564b1b, findElement {using=xpath, value=//p[contains(text(),'OpenEMR')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\BASHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:3648}, goog:processID: 11996, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:3648/devtool..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b003b01a763aacda011e1ee7c6564b1b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.15.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204) ~[selenium-support-4.15.0.jar:?]
+	... 28 more
+2026-01-05 12:19:56.949 [main] ERROR listeners.TestListener - ✗ Test Failed: testLoginPageDisplay
+2026-01-05 12:19:56.950 [main] ERROR listeners.TestListener - Failure Reason: java.lang.AssertionError: Login page should be displayed expected [true] but found [false]
+2026-01-05 12:19:56.952 [main] INFO  utils.ScreenshotUtil - Created screenshots directory: screenshots/
+2026-01-05 12:19:57.174 [main] INFO  utils.ScreenshotUtil - Screenshot captured and attached to Allure: FAILURE_testLoginPageDisplay
+2026-01-05 12:19:57.308 [main] INFO  utils.ScreenshotUtil - Screenshot saved to: screenshots/FAILURE_testLoginPageDisplay_20260105_121957.png
+2026-01-05 12:19:57.308 [main] ERROR utils.ScreenshotUtil - Test failed! Screenshot captured: FAILURE_testLoginPageDisplay
+2026-01-05 12:20:00.066 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:20:00.074 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:00.075 [main] INFO  listeners.TestListener - Test Started: testValidLogin
+2026-01-05 12:20:00.075 [main] INFO  listeners.TestListener - Test Description: Verify successful login with valid credentials
+2026-01-05 12:20:00.075 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:00.077 [main] INFO  pages.LoginPage - Performing login with username: Basharmal123
+2026-01-05 12:20:00.305 [main] INFO  pages.LoginPage - Entered username: Basharmal123
+2026-01-05 12:20:00.470 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:20:00.609 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:20:00.609 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:20:05.620 [main] INFO  listeners.TestListener - ✓ Test Passed: testValidLogin
+2026-01-05 12:20:07.842 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:20:07.849 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:07.850 [main] INFO  listeners.TestListener - Test Started: testInvalidLogin
+2026-01-05 12:20:07.850 [main] INFO  listeners.TestListener - Test Description: Verify login fails with invalid credentials
+2026-01-05 12:20:07.850 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:07.851 [main] INFO  pages.LoginPage - Performing login with username: invalidUser
+2026-01-05 12:20:08.052 [main] INFO  pages.LoginPage - Entered username: invalidUser
+2026-01-05 12:20:08.213 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:20:08.354 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:20:08.354 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:20:10.368 [main] INFO  listeners.TestListener - ✓ Test Passed: testInvalidLogin
+2026-01-05 12:20:12.644 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:20:12.652 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:12.652 [main] INFO  listeners.TestListener - Test Started: testEmptyCredentials
+2026-01-05 12:20:12.653 [main] INFO  listeners.TestListener - Test Description: Verify login with empty credentials
+2026-01-05 12:20:12.653 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:13.116 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:20:15.142 [main] INFO  listeners.TestListener - ✓ Test Passed: testEmptyCredentials
+2026-01-05 12:20:17.031 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:20:17.037 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:17.038 [main] INFO  listeners.TestListener - Test Started: testPageTitle
+2026-01-05 12:20:17.038 [main] INFO  listeners.TestListener - Test Description: Verify page title
+2026-01-05 12:20:17.038 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:17.048 [main] INFO  pages.LoginPage - Page title: OpenEMR Login
+2026-01-05 12:20:17.049 [main] INFO  listeners.TestListener - ✓ Test Passed: testPageTitle
+2026-01-05 12:20:17.263 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:17.263 [main] INFO  listeners.TestListener - Test Suite Finished: OpenEMR Test Suite
+2026-01-05 12:20:17.263 [main] INFO  listeners.TestListener - Total Tests: 5
+2026-01-05 12:20:17.264 [main] INFO  listeners.TestListener - Passed: 4
+2026-01-05 12:20:17.264 [main] INFO  listeners.TestListener - Failed: 1
+2026-01-05 12:20:17.264 [main] INFO  listeners.TestListener - Skipped: 0
+2026-01-05 12:20:17.264 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:20:17.296 [main] INFO  utils.EmailUtil - Preparing to send email to: usman.basharmal123@gmail.com
+2026-01-05 12:20:18.126 [main] ERROR utils.EmailUtil - Failed to send email: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 00721157ae682-790a87ba3cbsm1050557b3.10 - gsmtp
+
+javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 00721157ae682-790a87ba3cbsm1050557b3.10 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:388) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:246) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:195) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Transport.send0(Transport.java:254) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail-1.6.2.jar:1.6.2]
+	at utils.EmailUtil.sendEmailWithReport(EmailUtil.java:94) [classes/:?]
+	at listeners.TestListener.sendEmailReport(TestListener.java:119) [test-classes/:?]
+	at listeners.TestListener.onFinish(TestListener.java:44) [test-classes/:?]
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:274) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:338) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-01-05 12:26:15.084 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:15.091 [main] INFO  listeners.TestListener - Test Suite Started: OpenEMR Test Suite
+2026-01-05 12:26:15.091 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:17.933 [main] INFO  utils.ConfigReader - Loading configuration from: src/test/resources/config.properties
+2026-01-05 12:26:17.934 [main] INFO  utils.ConfigReader - Configuration loaded successfully
+2026-01-05 12:26:19.287 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:26:19.345 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:19.345 [main] INFO  listeners.TestListener - Test Started: testLoginPageDisplay
+2026-01-05 12:26:19.345 [main] INFO  listeners.TestListener - Test Description: Verify login page is displayed
+2026-01-05 12:26:19.345 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:39.411 [main] ERROR pages.LoginPage - Failed to verify login page: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'OpenEMR')]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'OpenEMR')]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229) ~[selenium-support-4.15.0.jar:?]
+	at pages.LoginPage.isLoginPageDisplayed(LoginPage.java:115) ~[classes/:?]
+	at tests.LoginPageTest.testLoginPageDisplay(LoginPageTest.java:34) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'OpenEMR')]"}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee46e983b7a4682869f582d1a7affdce, findElement {using=xpath, value=//p[contains(text(),'OpenEMR')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\BASHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:3863}, goog:processID: 4396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:3863/devtool..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee46e983b7a4682869f582d1a7affdce
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358) ~[selenium-remote-driver-4.15.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.15.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy37.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.15.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204) ~[selenium-support-4.15.0.jar:?]
+	... 28 more
+2026-01-05 12:26:39.440 [main] ERROR listeners.TestListener - ✗ Test Failed: testLoginPageDisplay
+2026-01-05 12:26:39.441 [main] ERROR listeners.TestListener - Failure Reason: java.lang.AssertionError: Login page should be displayed expected [true] but found [false]
+2026-01-05 12:26:39.688 [main] INFO  utils.ScreenshotUtil - Screenshot captured and attached to Allure: FAILURE_testLoginPageDisplay
+2026-01-05 12:26:39.839 [main] INFO  utils.ScreenshotUtil - Screenshot saved to: screenshots/FAILURE_testLoginPageDisplay_20260105_122639.png
+2026-01-05 12:26:39.840 [main] ERROR utils.ScreenshotUtil - Test failed! Screenshot captured: FAILURE_testLoginPageDisplay
+2026-01-05 12:26:42.648 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:26:42.657 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:42.657 [main] INFO  listeners.TestListener - Test Started: testValidLogin
+2026-01-05 12:26:42.657 [main] INFO  listeners.TestListener - Test Description: Verify successful login with valid credentials
+2026-01-05 12:26:42.658 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:42.659 [main] INFO  pages.LoginPage - Performing login with username: Basharmal123
+2026-01-05 12:26:42.914 [main] INFO  pages.LoginPage - Entered username: Basharmal123
+2026-01-05 12:26:43.067 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:26:43.201 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:26:43.201 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:26:47.995 [main] INFO  listeners.TestListener - ✓ Test Passed: testValidLogin
+2026-01-05 12:26:50.130 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:26:50.138 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:50.138 [main] INFO  listeners.TestListener - Test Started: testInvalidLogin
+2026-01-05 12:26:50.138 [main] INFO  listeners.TestListener - Test Description: Verify login fails with invalid credentials
+2026-01-05 12:26:50.138 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:50.139 [main] INFO  pages.LoginPage - Performing login with username: invalidUser
+2026-01-05 12:26:50.348 [main] INFO  pages.LoginPage - Entered username: invalidUser
+2026-01-05 12:26:50.495 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:26:50.613 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:26:50.613 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:26:52.649 [main] INFO  listeners.TestListener - ✓ Test Passed: testInvalidLogin
+2026-01-05 12:26:54.834 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:26:54.843 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:54.843 [main] INFO  listeners.TestListener - Test Started: testEmptyCredentials
+2026-01-05 12:26:54.843 [main] INFO  listeners.TestListener - Test Description: Verify login with empty credentials
+2026-01-05 12:26:54.844 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:55.271 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:26:57.306 [main] INFO  listeners.TestListener - ✓ Test Passed: testEmptyCredentials
+2026-01-05 12:26:59.227 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:26:59.233 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:59.234 [main] INFO  listeners.TestListener - Test Started: testPageTitle
+2026-01-05 12:26:59.234 [main] INFO  listeners.TestListener - Test Description: Verify page title
+2026-01-05 12:26:59.234 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:59.244 [main] INFO  pages.LoginPage - Page title: OpenEMR Login
+2026-01-05 12:26:59.246 [main] INFO  listeners.TestListener - ✓ Test Passed: testPageTitle
+2026-01-05 12:26:59.457 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:59.457 [main] INFO  listeners.TestListener - Test Suite Finished: OpenEMR Test Suite
+2026-01-05 12:26:59.458 [main] INFO  listeners.TestListener - Total Tests: 5
+2026-01-05 12:26:59.458 [main] INFO  listeners.TestListener - Passed: 4
+2026-01-05 12:26:59.458 [main] INFO  listeners.TestListener - Failed: 1
+2026-01-05 12:26:59.458 [main] INFO  listeners.TestListener - Skipped: 0
+2026-01-05 12:26:59.459 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:26:59.490 [main] INFO  utils.EmailUtil - Preparing to send email to: usman.basharmal123@gmail.com
+2026-01-05 12:27:00.388 [main] ERROR utils.EmailUtil - Failed to send email: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 00721157ae682-790a87ba3cbsm1110647b3.10 - gsmtp
+
+javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 00721157ae682-790a87ba3cbsm1110647b3.10 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:388) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:246) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:195) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Transport.send0(Transport.java:254) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail-1.6.2.jar:1.6.2]
+	at utils.EmailUtil.sendEmailWithReport(EmailUtil.java:94) [classes/:?]
+	at listeners.TestListener.sendEmailReport(TestListener.java:119) [test-classes/:?]
+	at listeners.TestListener.onFinish(TestListener.java:44) [test-classes/:?]
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:274) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:338) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-01-05 12:29:34.941 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:29:34.948 [main] INFO  listeners.TestListener - Test Suite Started: OpenEMR Test Suite
+2026-01-05 12:29:34.948 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:29:37.509 [main] INFO  utils.ConfigReader - Loading configuration from: src/test/resources/config.properties
+2026-01-05 12:29:37.510 [main] INFO  utils.ConfigReader - Configuration loaded successfully
+2026-01-05 12:29:38.689 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:29:38.745 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:29:38.745 [main] INFO  listeners.TestListener - Test Started: testValidLogin
+2026-01-05 12:29:38.745 [main] INFO  listeners.TestListener - Test Description: Verify successful login with valid credentials
+2026-01-05 12:29:38.745 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:29:38.749 [main] INFO  pages.LoginPage - Performing login with username: Basharmal123
+2026-01-05 12:29:38.942 [main] INFO  pages.LoginPage - Entered username: Basharmal123
+2026-01-05 12:29:39.094 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:29:44.491 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:29:44.492 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:29:47.522 [main] INFO  listeners.TestListener - ✓ Test Passed: testValidLogin
+2026-01-05 12:29:47.775 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:29:47.775 [main] INFO  listeners.TestListener - Test Suite Finished: OpenEMR Test Suite
+2026-01-05 12:29:47.776 [main] INFO  listeners.TestListener - Total Tests: 1
+2026-01-05 12:29:47.776 [main] INFO  listeners.TestListener - Passed: 1
+2026-01-05 12:29:47.776 [main] INFO  listeners.TestListener - Failed: 0
+2026-01-05 12:29:47.777 [main] INFO  listeners.TestListener - Skipped: 0
+2026-01-05 12:29:47.777 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:29:47.805 [main] INFO  utils.EmailUtil - Preparing to send email to: usman.basharmal123@gmail.com
+2026-01-05 12:29:48.855 [main] ERROR utils.EmailUtil - Failed to send email: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 00721157ae682-790a87b957esm1141577b3.2 - gsmtp
+
+javax.mail.AuthenticationFailedException: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 00721157ae682-790a87b957esm1141577b3.2 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876) ~[javax.mail-1.6.2.jar:1.6.2]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:388) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:246) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Service.connect(Service.java:195) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Transport.send0(Transport.java:254) ~[javax.mail-1.6.2.jar:1.6.2]
+	at javax.mail.Transport.send(Transport.java:124) ~[javax.mail-1.6.2.jar:1.6.2]
+	at utils.EmailUtil.sendEmailWithReport(EmailUtil.java:94) [classes/:?]
+	at listeners.TestListener.sendEmailReport(TestListener.java:119) [test-classes/:?]
+	at listeners.TestListener.onFinish(TestListener.java:44) [test-classes/:?]
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:274) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:338) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2026-01-05 12:34:59.245 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:34:59.251 [main] INFO  listeners.TestListener - Test Suite Started: OpenEMR Test Suite
+2026-01-05 12:34:59.252 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:35:02.650 [main] INFO  utils.ConfigReader - Loading configuration from: src/test/resources/config.properties
+2026-01-05 12:35:02.651 [main] INFO  utils.ConfigReader - Configuration loaded successfully
+2026-01-05 12:35:03.834 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:35:03.891 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:35:03.891 [main] INFO  listeners.TestListener - Test Started: testValidLogin
+2026-01-05 12:35:03.891 [main] INFO  listeners.TestListener - Test Description: Verify successful login with valid credentials
+2026-01-05 12:35:03.892 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:35:03.895 [main] INFO  pages.LoginPage - Performing login with username: Basharmal123
+2026-01-05 12:35:04.124 [main] INFO  pages.LoginPage - Entered username: Basharmal123
+2026-01-05 12:35:04.276 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:35:09.351 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:35:09.351 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:35:12.391 [main] INFO  listeners.TestListener - ✓ Test Passed: testValidLogin
+2026-01-05 12:35:12.691 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:35:12.691 [main] INFO  listeners.TestListener - Test Suite Finished: OpenEMR Test Suite
+2026-01-05 12:35:12.692 [main] INFO  listeners.TestListener - Total Tests: 1
+2026-01-05 12:35:12.692 [main] INFO  listeners.TestListener - Passed: 1
+2026-01-05 12:35:12.692 [main] INFO  listeners.TestListener - Failed: 0
+2026-01-05 12:35:12.693 [main] INFO  listeners.TestListener - Skipped: 0
+2026-01-05 12:35:12.693 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:35:12.724 [main] INFO  utils.EmailUtil - Preparing to send email to: usman.basharmal123@gmail.com
+2026-01-05 12:35:14.473 [main] INFO  utils.EmailUtil - Email sent successfully to: usman.basharmal123@gmail.com
+2026-01-05 12:54:01.060 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:54:01.069 [main] INFO  listeners.TestListener - Test Suite Started: OpenEMR Test Suite
+2026-01-05 12:54:01.070 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:54:05.098 [main] INFO  utils.ConfigReader - Loading configuration from: src/test/resources/config.properties
+2026-01-05 12:54:05.099 [main] INFO  utils.ConfigReader - Configuration loaded successfully
+2026-01-05 12:54:06.819 [main] INFO  pages.LoginPage - LoginPage initialized
+2026-01-05 12:54:06.900 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:54:06.900 [main] INFO  listeners.TestListener - Test Started: testValidLogin
+2026-01-05 12:54:06.900 [main] INFO  listeners.TestListener - Test Description: Verify successful login with valid credentials
+2026-01-05 12:54:06.900 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:54:06.904 [main] INFO  pages.LoginPage - Performing login with username: Basharmal123
+2026-01-05 12:54:07.434 [main] INFO  pages.LoginPage - Entered username: Basharmal123
+2026-01-05 12:54:07.577 [main] INFO  pages.LoginPage - Entered password
+2026-01-05 12:54:12.616 [main] INFO  pages.LoginPage - Clicked on Login button
+2026-01-05 12:54:12.616 [main] INFO  pages.LoginPage - Login attempt completed
+2026-01-05 12:54:15.662 [main] INFO  listeners.TestListener - ✓ Test Passed: testValidLogin
+2026-01-05 12:54:16.005 [main] INFO  listeners.TestListener - ========================================
+2026-01-05 12:54:16.006 [main] INFO  listeners.TestListener - Test Suite Finished: OpenEMR Test Suite
+2026-01-05 12:54:16.006 [main] INFO  listeners.TestListener - Total Tests: 1
+2026-01-05 12:54:16.006 [main] INFO  listeners.TestListener - Passed: 1
+2026-01-05 12:54:16.007 [main] INFO  listeners.TestListener - Failed: 0
+2026-01-05 12:54:16.007 [main] INFO  listeners.TestListener - Skipped: 0
+2026-01-05 12:54:16.007 [main] INFO  listeners.TestListener - ========================================

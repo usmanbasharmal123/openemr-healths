@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-05T11:42:21 EST" name="OpenEMR Test Suite" finished-at="2026-01-05T11:43:14 EST" duration-ms="52751">
+    <groups>
+    </groups>
+    <test started-at="2026-01-05T11:42:21 EST" name="Login Tests" finished-at="2026-01-05T11:43:14 EST" duration-ms="52751">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:21 EST" name="setUp" finished-at="2026-01-05T11:42:26 EST" duration-ms="4411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:26 EST" name="initializePage" finished-at="2026-01-05T11:42:26 EST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="testLoginPageDisplay()[pri:1, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:26 EST" name="testLoginPageDisplay" description="Verify login page is displayed" finished-at="2026-01-05T11:42:46 EST" duration-ms="20149" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.LoginPageTest.testLoginPageDisplay(LoginPageTest.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:46 EST" name="tearDown" finished-at="2026-01-05T11:42:46 EST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:46 EST" name="setUp" finished-at="2026-01-05T11:42:48 EST" duration-ms="2268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:48 EST" name="initializePage" finished-at="2026-01-05T11:42:48 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="testValidLogin()[pri:2, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:48 EST" name="testValidLogin" description="Verify successful login with valid credentials" finished-at="2026-01-05T11:42:59 EST" duration-ms="10792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:42:59 EST" name="tearDown" finished-at="2026-01-05T11:42:59 EST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:00 EST" name="setUp" finished-at="2026-01-05T11:43:03 EST" duration-ms="3712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:03 EST" name="initializePage" finished-at="2026-01-05T11:43:03 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="testInvalidLogin()[pri:3, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:03 EST" name="testInvalidLogin" description="Verify login fails with invalid credentials" finished-at="2026-01-05T11:43:06 EST" duration-ms="3230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:06 EST" name="tearDown" finished-at="2026-01-05T11:43:07 EST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:07 EST" name="setUp" finished-at="2026-01-05T11:43:09 EST" duration-ms="2324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:09 EST" name="initializePage" finished-at="2026-01-05T11:43:09 EST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="testEmptyCredentials()[pri:4, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:09 EST" name="testEmptyCredentials" description="Verify login with empty credentials" finished-at="2026-01-05T11:43:12 EST" duration-ms="2574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:12 EST" name="tearDown" finished-at="2026-01-05T11:43:12 EST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:12 EST" name="setUp" finished-at="2026-01-05T11:43:14 EST" duration-ms="2115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:14 EST" name="initializePage" finished-at="2026-01-05T11:43:14 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="testPageTitle()[pri:5, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:14 EST" name="testPageTitle" description="Verify page title" finished-at="2026-01-05T11:43:14 EST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@8692d67]" started-at="2026-01-05T11:43:14 EST" name="tearDown" finished-at="2026-01-05T11:43:14 EST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- Login Tests -->
+  </suite> <!-- OpenEMR Test Suite -->
+</testng-results>
